@@ -1,0 +1,26 @@
+{
+  "name": "calculator-test-task",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+
+    "test:chrome": "playwright test --project=chrome",
+    "test:firefox": "playwright test --project=firefox",
+    "test:edge": "playwright test --project=edge",
+
+    "test:chrome:headed": "playwright test --project=chrome --headed",
+    "test:firefox:headed": "playwright test --project=firefox --headed",
+    "test:edge:headed": "playwright test --project=edge --headed",
+
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "typescript": "^5.7.0"
+  },
+  "dependencies": {
+    "playwright": "^1.63.0"
+  }
+}
