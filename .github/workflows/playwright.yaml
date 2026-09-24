@@ -29,7 +29,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Playwright tests
-        run: npx playwright test --project=chrome
+        run: npx playwright test --workers=1 --project=chrome
 
       - name: Upload Playwright report
         if: always()
